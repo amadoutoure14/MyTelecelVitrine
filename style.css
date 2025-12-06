@@ -74,6 +74,7 @@ header h2 {
     align-items: center;
     width: 400px;
     height: 421px;
+    padding: 20px;
 }
 .circle{
     display: flex;
@@ -84,6 +85,7 @@ header h2 {
     height: 60px;
     border-radius: 50%;
     box-shadow: rgba(237, 229, 229, 0.35) 0 5px 15px;
+    border: none;
 }
 
 footer{
@@ -115,5 +117,16 @@ footer{
         justify-content: center;
         align-items: center;
         width: 300px;
+    }
+}
+
+@media only screen and (min-width: 412px) {
+    .description{
+        margin: 10px 25px 50px 20px;
+    }
+    .phone{
+        width: 350px;
+        height: 321px;
+
     }
 }
