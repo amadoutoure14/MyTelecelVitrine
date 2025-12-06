@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei Opti', cursive;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(255,255,255,0.62) 62%, rgba(56,170,220,0.8) 100%), url("assets/background.jpg") no-repeat center center / cover fixed;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    height: 10vh;
+}
+
+.description {
+    display: inline-block;
+    width: 100%;
+    justify-content: start;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+
+header h2 {
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.telecharger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    height: 60px;
+    gap: 20px;
+    padding: 10px;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 421px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: rgba(237, 229, 229, 0.35) 0 5px 15px;
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Inter', "sans-serif";
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 360px) {
+    header {
+        font-size: 10px;
+    }
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    header h2 {
+        font-size: 12px;
+    }
+    .description{
+        margin: 10px 15px 50px 20px;
+    }
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}
