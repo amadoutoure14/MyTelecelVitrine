@@ -6,95 +6,212 @@
     overflow: hidden;
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
-    min-height: 100vh;
+    height: 100%;
     background: linear-gradient(180deg, rgba(255,255,255,0.62) 62%, rgba(56,170,220,0.8) 100%), url("assets/background.jpg") no-repeat center center / cover fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+header .logo {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img{
+    height: 40px;
+    width: 40px;
+}
+
+header .logo h4{
+    font-size: 8px;
 }
 
 main{
+    width: 100%;
+    height: 90%;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-header {
-    padding: 20px;
+main .description{
     display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+main .telecharger{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+    height: 100px;
 }
 
-.description {
-    display: inline-block;
+main h4{
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+main .telecharger .circle{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+main .telecharger .circle img{
+    height: 40px;
+    width: 40px;
+}
+
+main .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+
+
+/*
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei Opti', cursive;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.62) 62%, rgba(56,170,220,0.8) 100%), url("assets/background.jpg") no-repeat center center / cover fixed;
+}
+
+header{
     width: 100%;
-    justify-content: start;
-    padding: 2% 5% 2% 10%;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
-
-
-header h2 {
-    font-size: 14px;
-}
-
-.logo {
+header .logo {
+    height: 100px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.logo h4 {
-    font-family: 'Inter', sans-serif;
-}
-
-.logo img {
-    width: 40px;
+header .logo img{
     height: 40px;
+    width: 40px;
 }
-.telecharger{
+header .logo h4{
+    font-size: 8px;
+}
+main{
+    width: 100%;
+    height: 90%;
     display: flex;
+    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 216px;
-    height: 60px;
-    gap: 20px;
-    padding: 10px;
 }
-.phone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 421px;
-    padding: 20px;
-}
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: rgba(237, 229, 229, 0.35) 0 5px 15px;
-    border: none;
-}
-
-footer {
+main .description{
     display: flex;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    margin-top: 20px;
+    padding-left: 4%;
+    padding-right: 2%;
+}
+main .telecharger{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+main h4{
+    font-weight: lighter;
+    font-size: 30px;
+}
+main .telecharger .circle{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+main .telecharger .circle img{
+    height: 40px;
+    width: 40px;
+}
+
+main .phone{
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 350px;
+    width: 350px;
+}
+footer{
     background-color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
 }
 
 
+ */
