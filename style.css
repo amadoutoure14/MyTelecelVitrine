@@ -12,7 +12,7 @@ html, body{
 
 body {
     height: 100%;
-    background: linear-gradient(180deg, rgba(255,255,255,0.62) 62%, rgba(56,170,220,0.8) 100%), url("assets/background.jpg") no-repeat center center / cover fixed;
+    background: linear-gradient(180deg, rgba(255,255,255,0.62) 62%, rgba(56,170,220,0.8) 100%);
     display: flex;
     flex-direction: column;
 }
@@ -79,9 +79,10 @@ main .description h5{
     text-decoration: none;
     border-radius: 8px;
     font-family: sans-serif;
+    background-color: #66afe0;
 }
 .telecharger:hover {
-    background-color: #66afe0;
+    background-color: #044b7a;
 }
 .circle {
     width: 40px;
